@@ -1,0 +1,39 @@
+@import 'index';
+
+.navbar {
+  background-color: $primary;
+  //   height: calc(5vh);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10vw 10px;
+
+  img.logo {
+    height: 70px;
+  }
+  div.d-flex {
+    button.btn-novo-cliente {
+        background-color: #F8FCFF;
+        color: #534C4C;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-size: 14px;
+        border: 0;
+        &:hover {
+            background-color: $light-gray;
+            color: #F8FCFF;
+        }
+    }
+    div.container-logout {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        span {
+          color: white;
+        }
+      }
+  } 
+  
+
+
+}

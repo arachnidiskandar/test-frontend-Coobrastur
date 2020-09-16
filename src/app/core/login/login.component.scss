@@ -1,0 +1,20 @@
+@import 'index';
+
+.content {
+    padding: 30px;
+    border-radius: 5px;
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    flex-flow: column;
+    .d-flex {
+        flex-flow: column;
+    }
+    button {
+        width: 50%;
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase;
+        
+    }
+}

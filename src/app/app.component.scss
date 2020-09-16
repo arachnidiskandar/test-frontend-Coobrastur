@@ -1,0 +1,23 @@
+@import 'index';
+
+#main-content {
+    display: flex;
+    height: 100%;
+    #sidebar {
+        width: 15vw;
+    }
+    #content.logado {
+        width: 85vw;
+        padding: 5vh 10vw;
+    }
+    #content.deslogado {
+        padding-top: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100vw;
+    }
+}
+#content {
+    background-color: white;
+}
