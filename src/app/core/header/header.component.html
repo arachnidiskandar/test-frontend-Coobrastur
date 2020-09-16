@@ -1,8 +1,8 @@
 <div class="navbar">
-    <img class="logo" src="assets/images/logo_coob_web_prata.png" alt="">
+    <img class="logo hideOnMobile" src="assets/images/logo_coob_web_prata.png" alt="">
     <div class="d-flex">
-        <button class="btn btn-novo-cliente"><i class="fas fa-plus mr-2"></i>Novo Cliente</button>
-        <div class="container-logout pointer">
+        <button (click)="redirectToNovoCliente()" class="btn btn-novo-cliente"><i class="fas fa-plus mr-2"></i>Novo Cliente</button>
+        <div (click)="logout()" class="container-logout pointer">
             <img class="mr-2" src="assets/icons/exit.svg" alt="">
             <span>Sair</span>
         </div>

@@ -1,6 +1,6 @@
-<app-header [class.hidden]="false"></app-header>
+<app-header [class.hidden]="!isLogged"></app-header>
 <div id="main-content">
-  <div id="content" class="deslogado">
+  <div id="router" [class.deslogado]="!isLogged">
     <router-outlet></router-outlet>
   </div>
 </div>

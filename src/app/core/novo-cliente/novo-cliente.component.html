@@ -1,0 +1,21 @@
+<div class="content">
+    <div class="header">
+        <h3><img class="mr-2" src="assets/icons/person.svg" alt="">Painel de clientes</h3>
+    </div>
+    <div class="descricao">
+        <h4 class="bold">Novo Cliente</h4>
+        <p>Informe os campos a seguir para cadastrar um novo cliente:</p>
+    </div>
+    <div class="form-container">
+        <div class="form mt-4">
+            <label for="nome">Nome</label>
+            <input [class.invalid]="nomeControl.invalid && nomeControl.dirty && nomeControl.touched" [formControl]="nomeControl" type="email" class="form-control mb-4" id="nome"/>
+            <label for="prof" class="mt-4">Profissão</label>
+            <input [class.invalid]="profissaoControl.invalid && profissaoControl.dirty && profissaoControl.touched" [formControl]="profissaoControl" type="text" class="form-control" id="prof" />
+        </div>
+        <div class="container-buttons">
+            <button (click)="cadastrar()" class="btn btn-primary mr-4">Cadastrar</button>
+            <button (click)="voltar()" class="btn btn-outline-primary">Voltar</button>
+        </div>
+    </div>
+</div>

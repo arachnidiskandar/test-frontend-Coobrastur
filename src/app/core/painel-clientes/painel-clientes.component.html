@@ -1,1 +1,16 @@
-<p>painel-clientes works!</p>
+<div class="content">
+    <div class="header">
+        <h3><img class="mr-2" src="assets/icons/person.svg" alt="">Painel de clientes</h3>
+    </div>
+    <div class="mb-4 lista-clientes">
+        <div class="mb-4" *ngFor=" let client of listaClientes">
+            <app-cliente [client]="client"></app-cliente>
+        </div>
+        
+        <span>Total: {{response?.total}} Clientes</span>
+    </div>
+    <div class="container-buttons">
+        <button [class.disabled]="response?.page === 1" (click)="response?.page !== 1 ? this.getLista(response?.page - 1) : null" class="btn btn-outline-primary mr-4">Anterior</button>
+        <button [class.disabled]="response?.total_pages === response?.page" (click)="response?.total_pages !== response?.page ? this.getLista(response?.page + 1) : null" class="btn btn-outline-primary">Próximo</button>
+    </div>
+</div>

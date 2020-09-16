@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="d-flex info-cliente">
+        <div class="d-flex nome-container">
+            <img class="logo" src="https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg" alt="">
+            <span>{{client.first_name}} {{client.last_name}}</span>
+        </div>
+    </div>
+    <span>{{client.email}}</span>
+    <button (click)="editar(client.id)" class="btn btn-outline-primary">Editar</button>
+</div>

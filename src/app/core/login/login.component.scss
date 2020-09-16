@@ -2,7 +2,6 @@
 
 .content {
     padding: 30px;
-    border-radius: 5px;
     width: 25vw;
     height: 50vh;
     display: flex;
@@ -16,5 +15,12 @@
         font-size: 14px;
         text-transform: uppercase;
         
+    }
+    @include phone-md {
+        width: 85vw;
+        button {
+            width: 40%;
+            font-size: 12px;
+        }
     }
 }

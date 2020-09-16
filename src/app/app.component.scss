@@ -1,23 +1,17 @@
 @import 'index';
 
-#main-content {
-    display: flex;
-    height: 100%;
-    #sidebar {
-        width: 15vw;
-    }
-    #content.logado {
-        width: 85vw;
-        padding: 5vh 10vw;
-    }
-    #content.deslogado {
-        padding-top: 10vh;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        width: 100vw;
+#router {
+    padding: 8vh 10vw 0;
+    @include phone {
+        padding: 5vh 5vw;
     }
 }
+
+#router.deslogado {
+    display: flex;
+    justify-content: center;
+}
+
 #content {
     background-color: white;
 }

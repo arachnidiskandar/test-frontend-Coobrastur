@@ -33,7 +33,17 @@
         }
       }
   } 
-  
-
-
+  .hideOnMobile {
+    @include phone {
+      display: none !important;
+    }
+  }
+  @include phone {
+      width: 90vw;
+      padding: 15px 5vw;
+      .d-flex {
+        justify-content: flex-end;
+        width: 100%;
+      }
+  }
 }
